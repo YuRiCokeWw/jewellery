@@ -8,7 +8,7 @@
 
 .start_page{
     height: 100vh;
-    background-image: url('Картинки/кольцо.jpg');
+    background-image: url("картинки/кольцо.jpg");
     background-position-y: -50px;
     background-size: cover;
    
