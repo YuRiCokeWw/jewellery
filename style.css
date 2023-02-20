@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.start_page{
+    height: 100vh;
+    background-image: url('Картинки/кольцо.jpg');
+    background-position-y: -50px;
+    background-size: cover;
+   
+}
+
+.start_page>section{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.background{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50,50,50,0.75);
+}
+header{
+   
+    display: grid;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+a,i{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+header>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>article>img{
+    height: 75px;
+}
+header>img{
+height: 70px;
+}
+header>article>*{
+    margin: 0 20px;
+
+}
+.start_page>section>article>h1{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 50px;
+   
+}
+
+.start_page>section>article>button{
+    font-size:24px ;
+    padding: 10px 20px;
+    background-color: rgba(50,50,50,1);
+    border: white 2px solid;
+    color: white;
+    text-transform: uppercase;
+}
+
+.start_page>section>article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body>section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+body>section>h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+body>section>h3{
+    font-size: 24px;
+}
+.buttons>button{
+    padding: 20px 40px;
+    background-color: white;
+    width: 100%;
+    border: rgba(50,50,50,0.25) solid 2px;
+    text-transform: uppercase;
+    color: rgba(50,50,50,1);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap:20px
+}
+.buttons>button.active{
+    background-color: rgba(50,50,50,1);
+    color: white;
+}
+.categories{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 250px);
+    width: 1070px;
+}
+.categories>article{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+}
+.categories>article>p{
+    color: white;
+    text-transform: uppercase;
+}
+.categories>article:nth-child(1){
+    background-image: url(Картинки/кольцо.jfif);
+}
+.categories>article:nth-child(2){
+    background-image: url(Картинки/серьги.jpg);
+}
+.categories>article:nth-child(3){
+    background-image: url(Картинки/4.jfif);
+}
+.categories>article:nth-child(4){
+    background-image: url(Картинки/запонки.png);
+}
+.categories>article:nth-child(5){
+    background-image: url(Картинки/браслет.jpg);
+}
+.categories>article:nth-child(6){
+    background-image: url(Картинки/часы2.jpg);
+}
+
+.categories>article>.fon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+}
+.categories>article{
+    position: relative;
+}
+.categories>article>p{
+    z-index: 1;
+    padding: 20px;
+    font-size: 16px;
+}
+.black{
+    background-color: black;
+}
+.black>*{
+    color: white;
+}
+.black>p{
+    width: 1068px;
+    font-size: 24px;
+    text-align: center;
+}
+.black>button{
+    color: black;
+    border: none;
+    width: 161.25px;
+    height: 59.2px;
+    text-transform: uppercase;
+    background-color: white;
+    margin-top: 50px;
+}
+.categories.second>article:nth-child(1){
+    background-image: url("Картинки/часы2.jpg");
+}
+.categories.second>article:nth-child(2){
+    background-image: url("Картинки/запонкиии.jfif");
+
+}
+.categories.second>article:nth-child(3){
+    background-image: url("Картинки/кольцо.jfif");
+}
+.categories.second{
+    grid-template-rows: 350px;
+}
+.categories.second~button{
+    background-color: rgba(50,50,50,1);
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+}
+
+.grid>article{
+    height: 250px;
+    background-size: cover;
+}
+.grid>article:nth-child(1){
+    background-image: url("картинки/эс3.jpg");
+    grid-column: span 2;
+}
+.grid>article:nth-child(2){
+    background-image: url("картинки/эс1.jfif");
+}
+.grid>article:nth-child(3){
+    background-image: url("картинки/эс7.jpg");
+}
+.grid>article:nth-child(4){
+    background-image: url("картинки/эс4.jpg");
+}
+.grid>article:nth-child(5){
+    background-image: url("картинки/эс6.jpg");
+}
+.grid>article:nth-child(6){
+    background-image: url("картинки/эс5.jpg");
+    grid-column: span 2;
+}
+
+.outer{
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.outer>article{
+    padding: 20px;
+    background-color: white;
+}
+.outer>article>input,
+.outer>article>button{
+    padding: 10px;
+    text-transform: uppercase;
+}
+.outer>article>button{
+    padding: 10px 20px;
+}
+.tree{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer>section:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 100px 0;
+    grid-gap: 20px;
+    max-width:1200px ;
+}
+
+footer>section:nth-child(1){
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+footer img{
+    max-width: 100%;
+}
+footer i{
+    color: black
+}
